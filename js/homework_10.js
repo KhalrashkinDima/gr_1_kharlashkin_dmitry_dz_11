@@ -32,7 +32,8 @@ async function getJson() {
 		InformationButton.innerHTML += `Получить информацию`;
 
 		deleteButton.onclick = () => arr[i].remove();
-		InformationButton.onclick = () => alert(arr[i].innerHTML);
+		InformationButton.onclick = () => alert('name:' + arr[i].name + 'username:' + arr[i].username + 'email:' 
++ arr[i].email + 'phone:' + arr[i].phone + 'website' + arr[i].website);
 
 		arr[i].appendChild(deleteButton);
 		arr[i].appendChild(InformationButton);
